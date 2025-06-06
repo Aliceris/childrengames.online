@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Haircut Game - Free Online Hair Styling Games for Kids | ChildrenGames.com</title>
+    <meta name="description" content="Play Funny Haircut game online for free! Style and cut hair in this entertaining kids' game. Perfect for children who love creativity and fun hairstyling adventures.">
+    <meta name="keywords" content="funny haircut, hair styling games, kids games, online games, free games, children games, haircutting game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://childrengames.com/funny-haircut">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Funny Haircut Game - Free Online Hair Styling Games for Kids">
+    <meta property="og:description" content="Play Funny Haircut game online for free! Style and cut hair in this entertaining kids' game.">
+    <meta property="og:url" content="https://childrengames.com/funny-haircut">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ChildrenGames.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Funny Haircut Game - Free Online Hair Styling Games for Kids">
+    <meta name="twitter:description" content="Play Funny Haircut game online for free! Style and cut hair in this entertaining kids' game.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #FF9500 0%, #FFCC02 50%, #FF6B35 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: #FF6B35;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 800;
+            background: linear-gradient(45deg, #FF6B35, #FF9500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .game-container {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            background: #f5f5f5;
+        }
+        
+        h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            color: #FF6B35;
+            margin: 30px 0 20px 0;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .game-description {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #FFCC02, #FF9500);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 5px 15px rgba(255, 149, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .feature-card p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+        
+        .play-button {
+            background: linear-gradient(135deg, #FF6B35, #FF9500);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .play-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+        }
+        
+        .instructions {
+            background: linear-gradient(135deg, #FFF8E1, #FFE0B2);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #FF9500;
+        }
+        
+        .instructions h3 {
+            color: #FF6B35;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .instructions ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .instructions li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+            color: #666;
+        }
+        
+        .instructions li:before {
+            content: '✂️';
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            margin-top: 30px;
+            color: #666;
+        }
+        
+        .loading-message {
+            text-align: center;
+            padding: 50px;
+            color: #FF6B35;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .game-frame {
+                height: 400px;
+            }
+            
+            .content-section {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .feature-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .game-frame {
+                height: 350px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Funny Haircut Game</h1>
+            <p class="subtitle">Create amazing hairstyles and have fun with this entertaining hair styling adventure!</p>
+            <button class="play-button" onclick="document.getElementById('gameFrame').scrollIntoView({behavior: 'smooth'})">
+                🎮 Play Now!
+            </button>
+        </header>
+        
+        <div class="game-container">
+            <iframe 
+                id="gameFrame"
+                class="game-frame" 
+                src="https://games.crazygames.com/en_US/funny-haircut/index.html"
+                title="Funny Haircut Game - Play Online"
+                allowfullscreen>
+                <div class="loading-message">
+                    Loading Funny Haircut Game... 💇‍♀️✨
+                </div>
+            </iframe>
+        </div>
+        
+        <div class="content-section">
+            <h2>About Funny Haircut Game</h2>
+            <div class="game-description">
+                Welcome to the most entertaining hair styling experience on the web! Funny Haircut is an exciting online game that lets children explore their creativity through virtual hairstyling. This engaging game combines fun gameplay with artistic expression, making it perfect for kids who love to experiment with different looks and styles.
+            </div>
+            
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Choose your customer and get ready to style their hair</li>
+                    <li>Use various tools like scissors, razors, and styling equipment</li>
+                    <li>Wash, cut, and style the hair to create unique looks</li>
+                    <li>Add colors, accessories, and finishing touches</li>
+                    <li>Show off your creative hairstyling masterpiece!</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>✂️ Professional Tools</h3>
+                    <p>Use realistic hairstyling tools including scissors, combs, and styling products</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Creative Freedom</h3>
+                    <p>Experiment with colors, lengths, and styles to create unique hairstyles</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👶 Kid-Friendly</h3>
+                    <p>Safe, educational gameplay designed specifically for children</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Mobile Ready</h3>
+                    <p>Play seamlessly on any device - desktop, tablet, or smartphone</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Why Kids Love This Game</h2>
+            <div class="game-description">
+                Funny Haircut provides a safe and entertaining environment for children to explore their artistic side. The game encourages creativity, helps develop fine motor skills through precise movements, and introduces basic concepts of styling and design. With its colorful graphics, intuitive controls, and endless possibilities for creativity, this game keeps children engaged while learning.
+                
+                <br><br>
+                
+                The game is completely free to play and requires no downloads or installations. Simply click play and start your hairstyling adventure! Parents can feel confident knowing their children are playing a safe, educational game that promotes creativity and artistic expression.
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Perfect for Aspiring Stylists</h2>
+            <div class="game-description">
+                Whether your child dreams of becoming a professional hairstylist or simply loves playing dress-up games, Funny Haircut offers the perfect platform for creative expression. The game features multiple characters with different hair types and lengths, allowing for diverse styling experiences. Each session provides new challenges and opportunities to create something amazing.
+                
+                <br><br>
+                
+                Join thousands of children worldwide who have discovered the joy of virtual hairstyling with Funny Haircut. Start playing today and watch your child's creativity flourish in this delightful digital salon experience!
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 ChildrenGames.com - Free Online Games for Kids | <a href="/" style="color: #FF6B35; text-decoration: none;">More Games</a></p>
+        </footer>
+    </div>
+</body>
+</html>
